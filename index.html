@@ -2,10 +2,123 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Sitem Açıldı!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzman Kombi Teknik Servis | 7/24 Hızlı ve Garantili Hizmet</title>
+    <!-- Tailwind CSS (Arayüz Tasarımı İçin) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (İkonlar İçin) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body>
-    <h1>Merhaba!</h1>
-    <p>GitHub Pages sitem başarıyla çalışıyor.</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Üst İletişim Çubuğu (Header) -->
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-fire-flame-simple text-orange-500 text-2xl"></i>
+                <span class="font-bold text-xl tracking-wide">UZMAN KOMBİ SERVİSİ</span>
+            </div>
+            <a href="tel:05555555555" class="hidden md:flex items-center space-x-2 bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-lg font-bold transition">
+                <i class="fa-solid fa-phone"></i>
+                <span>0555 555 55 55</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero / Ana Karşılama Alanı -->
+    <section class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Kombinizde Sorun mu Var? Aynı Gün Yerinde Servis!</h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-8">Kombi bakımı, arıza tespiti ve petek temizliğinde %100 garantili, hızlı ve uygun fiyatlı çözümler.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:05555555555" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl text-lg flex items-center justify-center space-x-2 shadow-lg transition">
+                    <i class="fa-solid fa-phone-volume text-xl"></i>
+                    <span>Hemen Ara: 0555 555 55 55</span>
+                </a>
+                <a href="https://wa.me/905555555555" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-xl text-lg flex items-center justify-center space-x-2 shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>WhatsApp'tan Yazın</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetlerimiz -->
+    <section class="py-12 max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">Hizmetlerimiz</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Hizmet 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Kombi Tamir & Bakım</h3>
+                <p class="text-gray-600">Her marka kombi için orijinal yedek parça ve garantili tamir hizmeti.</p>
+            </div>
+            <!-- Hizmet 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                    <i class="fa-solid fa-radiator"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Petek Temizliği</h3>
+                <p class="text-gray-600">Özel ilaç ve makinelerle petek temizliği yaparak yakıt tasarrufu sağlayın.</p>
+            </div>
+            <!-- Hizmet 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">7/24 Acil Servis</h3>
+                <p class="text-gray-600">Sıcak su veya ısınma problemlerinizde acil mobil ekiplerimiz kapınızda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neden Bizi Seçmelisiniz? -->
+    <section class="bg-blue-50 py-12 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">Neden Bizi Tercih Etmelisiniz?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex items-center space-x-3 bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-circle-check text-green-500 text-xl"></i>
+                    <span class="font-semibold">Şeffaf ve Uygun Fiyat Politikası</span>
+                </div>
+                <div class="flex items-center space-x-3 bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-circle-check text-green-500 text-xl"></i>
+                    <span class="font-semibold">1 Yıl Parça ve İşçilik Garantisi</span>
+                </div>
+                <div class="flex items-center space-x-3 bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-circle-check text-green-500 text-xl"></i>
+                    <span class="font-semibold">Sertifikalı ve Deneyimli Teknisyenler</span>
+                </div>
+                <div class="flex items-center space-x-3 bg-white p-4 rounded-xl shadow-sm">
+                    <i class="fa-solid fa-circle-check text-green-500 text-xl"></i>
+                    <span class="font-semibold">Aynı Gün Hızlı Servis İmkanı</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alt Bilgi (Footer) -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center px-4">
+        <p class="mb-2">© 2026 Uzman Kombi Teknik Servisi. Tüm Hakları Saklıdır.</p>
+        <p class="text-sm">Telefon numaralarında ve metinlerde kendi bilgilerinizi düzenleyebilirsiniz.</p>
+    </footer>
+
+    <!-- Mobil Sabit İletişim Butonları (Ekranın Altında Kalır) -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around p-2 z-50 shadow-lg">
+        <a href="tel:05423487796" class="flex-1 bg-orange-500 text-white font-bold py-3 mx-1 rounded-lg flex justify-center items-center space-x-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>Hemen Ara</span>
+        </a>
+        <a href="https://wa.me/905555555555" class="flex-1 bg-green-500 text-white font-bold py-3 mx-1 rounded-lg flex justify-center items-center space-x-2">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
 </body>
 </html>
